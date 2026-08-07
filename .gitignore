@@ -31,4 +31,6 @@ secret.json
 credentials.json
 *.tfstate
 *.tfvars
-borrador.md
+
+# Borrador
+borrador/
