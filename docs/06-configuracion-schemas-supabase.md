@@ -49,7 +49,3 @@ Para que la API despierte y vea el schema, debes agregarlo a la lista blanca:
    ```
 7. Guarda los cambios.
 8. **Reinicia el contenedor** de Supabase (en Coolify, puedes darle a Restart al servicio completo).
-
-## Paso 3: Validar en n8n
-
-Una vez reiniciado, ve a n8n, entra a tu nodo de Supabase, activa la opción **Use Custom Schema**, escribe el nombre exacto del schema y dale a "Execute step". Si no devuelve un error `503 Service Unavailable`, ¡felicidades, el schema está expuesto!
