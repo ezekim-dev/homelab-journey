@@ -6,8 +6,8 @@ En esta sección se documenta el hardware utilizado para el servidor y los detal
 - **CPU:** AMD Ryzen 5 2600 Six-Core Processor (3.4GHz)
 - **RAM:** 32GB
 - **GPU:** NVIDIA GeForce GTX 1060 3GB VRAM
-- **Almacenamiento (Activo):** Disco SSD de 240GB. *(En este primer periodo de pruebas, Ubuntu Server comparte el disco con Windows asignándole solo 60GB, para evitar romper instalaciones no respaldadas. Próximamente se evaluará pasar el 100% del SSD a Ubuntu).*
-- **Almacenamiento (Secundario):** 2 Discos Duros HDD (300GB y 1TB). *(Aún no formateados para Linux. Tras respaldar su contenido actual, se utilizarán para almacenamiento masivo y backups, ej. un servidor multimedia de películas).*
+- **Almacenamiento (Activo):** Disco SSD de 240GB. *(100% dedicado a Ubuntu Server en ext4 tras eliminar Windows por completo para máximo rendimiento y estabilidad).*
+- **Almacenamiento (Secundario):** 2 Discos Duros HDD (300GB y 1TB). *(Formateados en ext4 para almacenamiento masivo del Homelab, nube privada y copias de seguridad).*
 
 ## Sistema Operativo
 Se optó por instalar **Ubuntu Server (edición sin interfaz gráfica / CLI)**.
@@ -30,7 +30,7 @@ Una vez instalado el SO base, guiado fuertemente con la ayuda de IA para acelera
 Durante los primeros días administrando un servidor por línea de comandos, estos son los comandos más esenciales de supervivencia:
 
 - **Conectarse al servidor (desde otro PC en la misma red WiFi):** `ssh ezekim@192.168.1.15`
-- **Conectarse al servidor (desde CUALQUIER lugar del mundo vía Tailscale):** `ssh ezekim@100.66.226.31`
+- **Conectarse al servidor (desde CUALQUIER lugar del mundo vía Tailscale):** `ssh ezekim@100.73.181.114`
 - **Apagar el servidor de forma segura (cierra los contenedores de Docker correctamente):** `sudo shutdown now` (o `sudo poweroff`)
 - **Reiniciar el servidor:** `sudo reboot` (o `sudo shutdown -r now`)
 - **Actualizar lista de repositorios:** `sudo apt update`

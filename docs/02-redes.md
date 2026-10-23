@@ -85,5 +85,5 @@ sudo tailscale up
 Se debe instalar Tailscale en el equipo cliente (notebook) e iniciar sesión con la misma cuenta. Una vez hecho esto, Tailscale asignará una IP estática inamovible (ej. `100.x.x.x`) al servidor.
 Nos conectamos desde cualquier parte del mundo con:
 ```bash
-ssh ezekim@100.66.226.31
+ssh ezekim@100.73.181.114
 ```
